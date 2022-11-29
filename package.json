@@ -8,7 +8,8 @@
     "lint": "eslint --ignore-path .gitignore --fix 'src/**/*.{ts,js}'",
     "build": "tsc",
     "watch-noemit": "tsc --watch --noEmit",
-    "test": "jest ./src",
+    "test": "npx jest",
+    "test-watch": "npm run test -- --watch",
     "dev": "nodemon ./src/index.ts",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
